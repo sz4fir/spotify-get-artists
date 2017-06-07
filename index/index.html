@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify search</title>
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+
+
+<body>
+
+<div ng-app="app">
+    <div ng-controller="SearchController">
+        <h1>Search for an Artist</h1>
+        <p>Type an artist name and click on "Search". Then, click on any album from the results to play 30 seconds of its first track.</p>
+        <form id="search-form">
+            <input style="width: 250px; height: 20px;padding: 5px;" ng-change="queryChanged()" type="text" id="query" value="" class="form-control" ng-model="query" placeholder="Type an Artist Name"/>
+        </form>
+        <ul>
+            <li ng-repeat="artist in artists">{{artist.name}}</li>
+        </ul>
+    </div>
+</div>
+
+<script src="../node_modules/angular/angular.js"></script>
+<script src="index.js"></script>
+<script src="../config/config.js"></script>
+</body>
+</html>

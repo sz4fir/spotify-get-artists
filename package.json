@@ -1,0 +1,19 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "Simple app to ask Spotify api for artists",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sz4fir/spotify-get-artists.git"
+  },
+  "author": "sz4fir",
+  "license": "LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/sz4fir/spotify-get-artists/issues"
+  },
+  "homepage": "https://github.com/sz4fir/spotify-get-artists#readme",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}
